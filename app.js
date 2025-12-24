@@ -292,7 +292,7 @@ Flaws:
 ${r.flaws.map(f => "• " + f).join("\n")}
 
 Take the quiz:
-${location.origin}/quiz
+${location.origin}/quiz/
         `.trim();
 
         navigator.clipboard.writeText(shareText)
