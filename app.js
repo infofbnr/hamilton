@@ -7,12 +7,12 @@ const CONNECT_KEY = "connect_usage";
 
 const DATA = window.HAMILT_DATA;
 const characterImages = {
-  "Hamilton": "/images/characters/hamilton.jpg",
-  "Burr": "/images/characters/burr.jpg",
-  "Eliza": "/images/characters/eliza.jpg",
-  "Angelica": "/images/characters/angelica.png",
-  "Washington": "/images/characters/washington.jpg",
-  "Jefferson": "/images/characters/jefferson.jpg"
+  "Hamilton": "/hamilton/images/characters/hamilton.jpg",
+  "Burr": "/hamilton/images/characters/burr.jpg",
+  "Eliza": "/hamilton/images/characters/eliza.jpg",
+  "Angelica": "/hamilton/images/characters/angelica.png",
+  "Washington": "/hamilton/images/characters/washington.jpg",
+  "Jefferson": "/hamilton/images/characters/jefferson.jpg"
 };
 function canAttemptConnect() {
   const today = new Date().toISOString().slice(0, 10);
