@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connections — HamilVerse</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/png" href="../logo.png" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a class="logo" href="/">
+      <img src="../logo.png" alt="HamilVerse logo" class="logoImg" />
+      <span class="logoText">
+        <span class="logoName">HamilVerse</span>
+        <span class="logoTag">The world of Hamilton.</span>
+      </span>
+    </a>
+
+    <nav class="menu">
+      <a href="/" class="menuLink">Home</a>
+      <a href="/lyrics/" class="menuLink">Lyrics → Life</a>
+      <a href="/quiz/" class="menuLink">Quiz</a>
+      <a href="/connect/" class="menuLink active">Connections</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- INTRO -->
+    <section class="intro">
+      <div class="introText">
+        <h1>Connections</h1>
+        <p>
+          Start with anything — a person, object, game, city, idea —
+          and build a clean chain of categories that lands in <em>Hamilton</em>.
+        </p>
+<br>
+      <div class="introCard">
+        <div class="cardTitle">How it works</div>
+        <div class="cardQuote">
+          Type something. The site generates a logical category chain.
+          Short, clean, and shareable.
+        </div>
+        <div class="cardFrom">
+          “Everything is connected.” (almost.)
+        </div>
+      </div>
+    </section>
+
+    <!-- INPUT + OUTPUT -->
+    <section class="connectGrid">
+      <div class="connectPanel">
+        <label class="connectLabel" for="connectInput">Start point</label>
+
+        <input
+          id="connectInput"
+          class="connectInput"
+          placeholder="e.g. Veronica Sawyer, chess, Napoleon, Minecraft"
+          autocomplete="off"
+        />
+        <div id="connectLimit" class="connectLimit"></div>
+
+        <div class="actions connectActions">
+          <button id="connectBtn" class="primaryBtn" type="button">
+            Build the connection
+          </button>
+          <button id="randomBtn" class="secondaryBtn" type="button">
+            Random prompt
+          </button>
+        </div>
+
+        <div id="connectOutput" class="connectOutput hidden"></div>
+      </div>
+
+      <div class="connectExamples">
+        <div class="connectExamplesTitle">Examples</div>
+
+        <div class="exampleCard">
+          <div class="exampleName">Veronica Sawyer</div>
+          <div class="exampleChain">
+            Veronica Sawyer → fictional character → stage stories → musical theatre → <em>Hamilton</em>
+          </div>
+        </div>
+
+        <div class="exampleCard">
+          <div class="exampleName">Chess</div>
+          <div class="exampleChain">
+            Chess → strategy → power dynamics → political conflict → <em>Hamilton</em>
+          </div>
+        </div>
+
+        <div class="exampleCard">
+          <div class="exampleName">Chocolate</div>
+          <div class="exampleChain">
+            Chocolate → commerce → trade → economics → American history → <em>Hamilton</em>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="../data.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html>

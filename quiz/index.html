@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Which Hamilton Character Are You? — HamilVerse</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/png" href="../logo.png" />
+</head>
+<body>
+
+  <!-- HEADER (same as home) -->
+  <header class="header">
+    <a class="logo" href="/">
+      <img src="../logo.png" alt="HamilVerse logo" class="logoImg" />
+      <span class="logoText">
+        <span class="logoName">HamilVerse</span>
+        <span class="logoTag">The world of Hamilton.</span>
+      </span>
+    </a>
+
+    <nav class="menu">
+      <a href="/" class="menuLink">Home</a>
+      <a href="/lyrics/" class="menuLink">Lyrics → Life</a>
+      <a href="/quiz/" class="menuLink active">Quiz</a>
+      <a href="/connect/" class="menuLink">Connect</a>
+
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- INTRO -->
+    <section class="intro">
+      <div class="introText">
+        <h1>Which Hamilton character are you?</h1>
+        <p>
+          Answer instinctively. No overthinking.
+          Your choices reveal the character you align with most.
+        </p>
+      </div>
+
+      <!-- STATIC INFO CARD -->
+      <div class="introCard">
+        <div class="cardTitle">How it works</div>
+        <div class="cardQuote">
+          You’ll answer a short set of questions based on values,
+          reactions, and instincts.
+        </div>
+        <div class="cardFrom">
+          Inspired by the characters of <em>Hamilton</em>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ AREA -->
+    <section class="grid">
+
+      <!-- QUESTION CARD (JS injects content here) -->
+      <div class="tile" id="quizCard">
+        <!-- app.js fills this -->
+      </div>
+
+      <!-- RESULT CARD -->
+      <div class="tile hidden" id="quizResult">
+        <div class="resultLayout">
+          
+          <div class="resultImageWrap">
+            <img id="resultImage" alt="" />
+          </div>
+
+          <div class="resultContent">
+            <div class="tileTitle" id="resultName"></div>
+
+            <div class="tileText" id="resultQuote"></div>
+
+            <div class="tileText">
+              <strong>Strengths</strong>
+              <ul id="resultStrengths"></ul>
+            </div>
+
+            <div class="tileText">
+              <strong>Flaws</strong>
+              <ul id="resultFlaws"></ul>
+            </div>
+
+            <div class="tileText" id="resultExplain"></div>
+
+            <div class="actions retakeRow">
+              <button id="retakeBtn" class="primaryBtn">Retake quiz</button>
+              <button id="shareBtn" class="secondaryBtn">Share result</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+  </main>
+
+  <script src="../data.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html>

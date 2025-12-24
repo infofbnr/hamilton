@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lyrics → Life — HamilVerse</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/png" href="../logo.png" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a class="logo" href="/">
+      <img src="../logo.png" alt="HamilVerse logo" class="logoImg" />
+      <span class="logoText">
+        <span class="logoName">HamilVerse</span>
+        <span class="logoTag">The world of Hamilton.</span>
+      </span>
+    </a>
+
+    <nav class="menu">
+      <a href="/" class="menuLink">Home</a>
+      <a href="/lyrics/" class="menuLink active">Lyrics → Life</a>
+      <a href="/quiz/" class="menuLink">Quiz</a>
+      <a href="/connect/" class="menuLink">Connect</a>
+
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- INTRO -->
+    <section class="intro">
+      <div class="introText">
+        <h1>Lyrics → Life</h1>
+        <p>
+          A single line can carry a lifetime.
+          Here, Hamilton’s lyrics are unpacked — not as quotes,
+          but as ideas that still matter.
+        </p>
+      </div>
+
+      <div class="introCard">
+        <div class="cardTitle">How to read this</div>
+        <div class="cardQuote">
+          Each card starts with a lyric, then traces what it reveals
+          about ambition, fear, loyalty, or legacy.
+        </div>
+        <div class="cardFrom">
+          Short lines. Real meaning.
+        </div>
+      </div>
+    </section>
+
+    <!-- LYRICS GRID -->
+    <section class="lyricsGrid" id="lyricsGrid">
+
+      <!-- app.js injects lyric cards here -->
+    </section>
+
+  </main>
+
+  <script src="../data.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html>

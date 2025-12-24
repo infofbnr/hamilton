@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HamilVerse — The World of Hamilton</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="/">
+      <img src="/logo.png" alt="HamilVerse logo" class="logoImg" />
+      <span class="logoText">
+        <span class="logoName">HamilVerse</span>
+        <span class="logoTag">Everything connects back to Hamilton.</span>
+      </span>
+    </a>
+
+
+
+    <nav class="menu">
+      <a href="/" class="menuLink active">Home</a>
+      <a href="/lyrics/" class="menuLink">Lyrics → Life</a>
+      <a href="/quiz/" class="menuLink">Quiz</a>
+      <a href="/connect/" class="menuLink">Connect</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="intro">
+      <div class="introText">
+      <h1>The world of Hamilton.</h1>
+      <p>
+        HamilVerse is a space for everything that makes <em>Hamilton</em> timeless,
+        the history behind it, the lyrics that define it, the characters we argue about,
+        and the legacy it left behind.
+      </p>
+
+      <div class="actions">
+        <a class="primaryBtn" href="/quiz/">Take a Hamilton inspired personality quiz</a>
+        <a class="secondaryBtn" href="/lyrics/">Dive into the lyrics</a>
+      </div>
+
+      </div>
+
+      <div class="introCard">
+        <div class="cardTop">
+          <div class="cardTitle">Featured lyric</div>
+          <button id="newQuoteBtn" class="smallBtn" type="button">Shuffle</button>
+        </div>
+
+        <div id="rotatingQuote" class="cardQuote">Loading…</div>
+        <div class="cardFrom" id="quoteFrom">—</div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
